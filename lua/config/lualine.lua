@@ -130,9 +130,10 @@ ins_left {
   'filename',
   cond = conditions.buffer_not_empty,
   color = { fg = colors.magenta, gui = 'bold' },
+  path = 1,
 }
 
-ins_left { 'location' }
+ins_left { 'location'}
 
 ins_left { 'progress', color = { fg = colors.fg, gui = 'bold' } }
 
