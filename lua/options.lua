@@ -2,7 +2,7 @@
 vim.opt.clipboard = 'unnamedplus' -- use system clipboard
 vim.opt.completeopt = { 'menu', 'menuone', 'noselect' } 
 vim.opt.mouse = 'a' -- allow the mouse to be used in Nvim
-vim.opt.scrolloff = 10 -- no less than 10 lines even if you keep scrolling down
+vim.opt.scrolloff = 15 -- no less than 10 lines even if you keep scrolling down
 
 -- Tab
 vim.opt.tabstop = 4 -- number of visual spaces per TAB

@@ -29,8 +29,8 @@ vim.keymap.set('n', '<C-Right>', ':vertical resize +2<CR>', opts)
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- bufferline 左右Tab切换
-vim.keymap.set("n", "<C-i>", ":BufferLineCyclePrev<CR>", opts)
-vim.keymap.set("n", "<C-o>", ":BufferLineCycleNext<CR>", opts)
+vim.keymap.set("n", "<C-,>", ":BufferLineCyclePrev<CR>", opts)
+vim.keymap.set("n", "<C-.>", ":BufferLineCycleNext<CR>", opts)
 vim.keymap.set("n", "<leader>1", ":BufferLineGoToBuffer 1<CR>", opts)
 vim.keymap.set("n", "<leader>2", ":BufferLineGoToBuffer 2<CR>", opts)
 vim.keymap.set("n", "<leader>3", ":BufferLineGoToBuffer 3<CR>", opts)
@@ -43,6 +43,9 @@ vim.keymap.set("n", "<leader>9", ":BufferLineGoToBuffer 9<CR>", opts)
 vim.keymap.set("n", "<leader>0", ":BufferLineGoToBuffer -1<CR>", opts)
 vim.keymap.set("n", "<leader>q", ":bd<CR>", opts)
 vim.keymap.set("n", "<leader>aq", ":BufferLineCloseOthers<CR>", opts)
+
+-- git-blame
+vim.keymap.set("n", "<leader>b",":BlameToggle window<CR>", opts)
 
 -----------------
 -- Visual mode --
