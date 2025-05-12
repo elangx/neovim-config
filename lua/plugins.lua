@@ -290,5 +290,20 @@ require("lazy").setup({
       event = {"CmdlineEnter"},
       ft = {"go", 'gomod'},
       build = ':lua require("go.install").update_all_sync()' -- if you need to install/update all binaries
+  },
+  {
+    "folke/snacks.nvim",
+    ---@type snacks.Config
+    opts = {
+      scroll = {
+        -- your scroll configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+        animate = {
+          duration = { step = 15, total = 250 },
+          easing = "linear",
+        }
+      }
+    }
   }
 })
