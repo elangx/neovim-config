@@ -11,6 +11,7 @@ require('mason').setup({
 require('mason-lspconfig').setup({
     -- A list of servers to automatically install if they're not already installed
     ensure_installed = { 'gopls', 'lua_ls', 'rust_analyzer','intelephense' ,'golines','goimport'},
+    automatic_enable = false
 })
 
 -- Set different settings for different languages' LSP
