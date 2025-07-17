@@ -44,6 +44,9 @@ vim.keymap.set("n", "<leader>0", ":BufferLineGoToBuffer -1<CR>", opts)
 vim.keymap.set("n", "<leader>q", ":bd<CR>", opts)
 vim.keymap.set("n", "<leader>aq", ":BufferLineCloseOthers<CR>", opts)
 
+-- show error list
+vim.keymap.set("n", "<leader>er", ":Telescope diagnostics<CR>", opts)
+
 -- git-blame
 vim.keymap.set("n", "<leader>b",":BlameToggle window<CR>", opts)
 
