@@ -11,5 +11,5 @@ vim.keymap.set("n", "<leader>fc", function() -- fc = find by content
 	builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
 -- show error list
-vim.keymap.set("n", "<leader>er", ":Telescope diagnostics<CR>", opts)
+vim.keymap.set("n", "<leader>er", builtin.diagnostics, opts)
 -- vim.keymap.set("n", "<leader>fc", builtin.grep_string, {})
